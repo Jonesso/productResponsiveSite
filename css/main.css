@@ -320,12 +320,29 @@ template {
 .col {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 100%;
-  flex: 0 0 100%; }
+  flex: 0 0 100%;
+  padding: 0 .75em; }
+  @media (min-width: 725px) {
+    .col:first-of-type {
+      padding-left: 0; }
+    .col:last-of-type {
+      padding-right: 0; } }
 
 .col--full {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%; }
+
+@media (min-width: 725px) {
+  .col--1-3 {
+    -ms-flex-preferred-size: 33.3333%;
+    flex-basis: 33.3333%; }
+  .col--2-3 {
+    -ms-flex-preferred-size: 66.6666%;
+    flex-basis: 66.6666%; }
+  .col--1-2 {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%; } }
 
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
@@ -411,7 +428,7 @@ h2 {
 
 .title-footer {
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   line-height: 1; }
   .title-footer::before, .title-footer::after {
     content: '';
@@ -428,13 +445,23 @@ h2 {
   background: #d31869;
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
+  left: 100%;
   font-size: 1.2rem;
   overflow: hidden;
   -webkit-transition: all ease-in-out 250ms;
   -o-transition: all ease-in-out 250ms;
   transition: all ease-in-out 250ms; }
+  @media (min-width: 725px) {
+    .main-nav {
+      position: relative;
+      -webkit-box-flex: 1;
+      -ms-flex: auto;
+      flex: auto;
+      background: none;
+      margin-top: 1em;
+      margin-left: 2em;
+      left: 0; } }
   .main-nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -446,6 +473,13 @@ h2 {
     -ms-flex-pack: distribute;
     justify-content: space-around;
     height: 100vh; }
+    @media (min-width: 725px) {
+      .main-nav ul {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        height: auto; } }
   .main-nav li {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
@@ -454,6 +488,11 @@ h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    @media (min-width: 725px) {
+      .main-nav li {
+        display: inline-block;
+        border: none;
+        text-align: right; } }
   .main-nav a {
     color: white;
     text-decoration: none;
@@ -468,10 +507,16 @@ h2 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
+    @media (min-width: 725px) {
+      .main-nav a {
+        display: inline; } }
     .main-nav a:hover {
       background: rgba(0, 0, 0, 0.1); }
+      @media (min-width: 725px) {
+        .main-nav a:hover {
+          background: none;
+          color: #8e1047; } }
   .main-nav.is-open {
-    display: block;
     left: 0; }
 
 .nav-toggle {
@@ -481,6 +526,9 @@ h2 {
   right: 1em;
   top: 1em;
   cursor: pointer; }
+  @media (min-width: 725px) {
+    .nav-toggle {
+      display: none; } }
 
 .hamburger, .hamburger::before, .hamburger::after {
   content: '';
@@ -525,9 +573,6 @@ h2 {
   min-width: 10rem;
   max-width: 15rem; }
 
-.main-nav {
-  display: none; }
-
 .hero {
   background: -webkit-gradient(linear, left top, right top, from(#048ca8), to(#16db9d));
   background: -webkit-linear-gradient(left, #048ca8, #16db9d);
@@ -537,6 +582,16 @@ h2 {
   padding-top: 8em;
   padding-bottom: 8em;
   text-align: center; }
+  @media (min-width: 725px) {
+    .hero {
+      text-align: left;
+      padding-bottom: 0;
+      height: 80vmin;
+      min-height: 800px; } }
+
+@media (min-width: 725px) {
+  .hero-text {
+    margin-top: 10vmax; } }
 
 .sales-points {
   padding: 10vh 0 0; }
@@ -549,6 +604,16 @@ h2 {
     @media (min-width: 725px) {
       .sales-points .sales-point:first-of-type {
         margin-top: 0; } }
+
+.promo .bg-primary {
+  text-align: left;
+  padding-left: 7%;
+  padding-top: 7.5em;
+  padding-bottom: 7.5em; }
+
+.promo .img-box {
+  background-size: cover;
+  background: url("../img/phone-in-hand.jpg") center; }
 
 footer {
   background: #444;
@@ -563,8 +628,10 @@ footer {
     bottom: 0;
     right: 0;
     left: 0;
+    background: url("../img/logo.svg");
     background-size: contain;
-    background: url("../../img/logo.svg") no-repeat center;
+    background-repeat: no-repeat;
+    background-position: center;
     opacity: 0.05; }
   footer a {
     color: white; }
@@ -585,7 +652,6 @@ footer {
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  width: 80%;
   margin: 0 auto; }
   .nav-footer a {
     text-decoration: none;
@@ -607,7 +673,8 @@ footer {
   color: white;
   border: 2px solid #d31869; }
   .btn--primary:hover, .btn--primary:focus {
-    background: #8e1047; }
+    background: #8e1047;
+    border-color: #8e1047; }
 
 .btn--secondary {
   border: 2px solid white;
@@ -618,7 +685,7 @@ footer {
 
 .cta {
   background-color: #16db9d;
-  background-image: url("../../img/call-to-action-background.jpg");
+  background-image: url(../img/call-to-action-background.jpg);
   background-size: cover;
   background-position: center;
   padding: 5em 0;

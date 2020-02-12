@@ -2,23 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80d568a9-7513-4a3a-a6a7-376dfa0c3848" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass/components/_cta.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass/layout/_footer.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass/layout/_home-promo.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass/layout/_home-sales-points.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass/layout/_nav.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prepros-6.config" beforeDir="false" afterPath="$PROJECT_DIR$/prepros-6.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/abstracts/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/abstracts/_colors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/base/_base.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/base/_base.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/base/_typography.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/base/_typography.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/components/_buttons.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_buttons.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/components/_cta.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_cta.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/layout/_footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_footer.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/layout/_grid.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_grid.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/layout/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_header.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/layout/_hero.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_hero.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/layout/_home-promo.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_home-promo.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/layout/_nav.sass" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_nav.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +59,7 @@
       <workItem from="1580562730569" duration="29000" />
       <workItem from="1580562777849" duration="8405000" />
       <workItem from="1581355083964" duration="6650000" />
+      <workItem from="1581504167989" duration="4213000" />
     </task>
     <servers />
   </component>
